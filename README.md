@@ -6,7 +6,7 @@
 
 # Test poweranalyse
 
-[Adolf, Janne![ORCID logo](https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png)](https://orcid.org/https://orcid.org/0000-0001-6064-9803)[^aut][^cre][^inbo.be]
+[Adolf, Janne![ORCID logo](https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png)](https://orcid.org/0000-0001-6064-9803)[^aut][^cre][^inbo.be]
 Research Institute for Nature and Forest (INBO)[^cph][^fnd]
 
 [^cph]: copyright holder
