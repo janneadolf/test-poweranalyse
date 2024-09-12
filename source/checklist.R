@@ -1,2 +1,1 @@
-library(checklist)
-check_project()
+checklist::check_project()
