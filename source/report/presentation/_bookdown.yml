@@ -1,0 +1,3 @@
+book_filename: "my_slides"
+output_dir: "../../../output/presentation"
+delete_merged_file: FALSE
