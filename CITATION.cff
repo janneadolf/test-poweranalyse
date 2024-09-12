@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: If you use this software, please cite it using these metadata.
+title: "Test poweranalyse"
+authors:
+- given-names: Janne
+  family-names: Adolf
+  affiliation: Research Institute for Nature and Forest (INBO)
+  orcid: 0000-0001-6064-9803
+keywords:
+- power
+- simulation
+contact:
+- given-names: Janne
+  family-names: Adolf
+  affiliation: Research Institute for Nature and Forest (INBO)
+  orcid: 0000-0001-6064-9803
+doi: ~
+license: CC-BY-4.0
+repository-code: https://github.com/janneadolf/test-poweranalyse/
+type: software
+abstract: "This repository serves as a testing environment for tools that aim to facilitate
+  (mainly simulation-based) power analysis.\nCurrently, the selection is restricted
+  to tools from quantitative psychology, which has been my professional background,
+  and related fields."
