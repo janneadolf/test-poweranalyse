@@ -22,3 +22,6 @@ install.packages("INBOmd")
 #
 # write renv lockfile
 renv::snapshot()
+#
+# author information can be adapted manually via
+# C:\Users\janne_adolf\AppData\Roaming\R\data\R\checklist
