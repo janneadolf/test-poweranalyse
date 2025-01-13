@@ -1,0 +1,14 @@
+/* References container for each slide */
+  .refFooter p {
+    color: #acacbd;
+      font-size: 12pt;
+    position: absolute;
+    top: 660px;
+    left: 80px;
+  }
+
+
+/* References container (self-made) */
+  .references p {
+    font-size: 8pt;
+  }

@@ -1,0 +1,94 @@
+---
+title: "Test presentation"
+output: 
+  beamer_presentation
+date: "2025-01-13"
+bibliography: "bibliography.bib"
+css: "style.css"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(citr)
+options(citr.use_betterbiblatex = TRUE) 
+```
+
+
+## Scope presentation
+
+- Overview
+    - rather superficial
+- Interesting / useful resources
+    - for own use
+    - for didactic use
+- Share experiences
+
+## Outline presentation
+
+- ...
+
+
+## Statistical power 
+
+Hypothesis testing (Neyman-Pearson framework)
+
+- Given 
+$H_0: \theta = \theta_0 \, , \; H_1: \theta \neq \theta_0$
+
+- We have outcomes:
+
+\begin{table}
+\scriptsize
+\begin{tabular}{cr|cc|cc}
+\multicolumn{2}{p{0.5cm}|}
+{} 
+& Retain $H_0$ & Reject $H_0$ \\
+\hline
+& $H_0$ true & correct decision& type I error\\
+& & (probability $1-\alpha$) & (probability $\alpha$)\\[0.7ex]
+& $H_1$ true & type II error & correct decision \\
+& & (probability $\beta$) & (probability $1-\beta$)\\
+\hline
+\end{tabular}
+\normalsize
+\end{table} 
+
+\vspace{\baselineskip}
+- Statistical power: 
+$(1-\beta) =\pi = P(reject \,H_0 \,| \,H_0 \,false)$ 
+
+
+
+## Statistical power 
+
+Statistical power is a function of:
+
+- Design factors (e.g., sample size, sample size within and number of groups, number and spacing of measurement occasions)
+- Size of to-be-detected effect (and other population-level effects)
+- Chosen $\alpha$-value
+
+
+## Statistical power
+
+Power-based study design:
+
+- Power as a quality criterion for study design (a-priori power analysis)
+- Example survey 
+
+
+## Background
+
+\scriptsize
+“1960s: Jacob Cohen studies statistical power, spreading the idea that design and data collection are central to good research in psychology, and culminating in his book, Statistical Power Analysis for the Behavioral Sciences, The research community incorporates Cohen’s methods and terminology into its practice (...)” [@gelman_what_2025]
+\normalsize
+
+
+## Slide with R Output
+
+```{r cars, echo = TRUE}
+summary(cars)
+```
+
+
+## References 
+
