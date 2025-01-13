@@ -24,11 +24,21 @@
       ],
       "Hash": "065ae649b05f1ff66bb0c793107508f5"
     },
+    "DiceKriging": {
+      "Package": "DiceKriging",
+      "Version": "1.6.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "methods"
+      ],
+      "Hash": "033765b87e28c58cb80809cc668a9623"
+    },
     "INBOmd": {
       "Package": "INBOmd",
       "Version": "0.6.3",
       "Source": "Repository",
-      "Repository": "CRAN",
+      "Repository": "https://inbo.r-universe.dev",
       "Requirements": [
         "R",
         "assertthat",
@@ -51,7 +61,7 @@
       "Package": "INBOtheme",
       "Version": "0.6.0",
       "Source": "Repository",
-      "Repository": "inbo",
+      "Repository": "https://inbo.r-universe.dev",
       "Requirements": [
         "R",
         "assertthat",
@@ -126,6 +136,38 @@
       ],
       "Hash": "f27411eb6d9c3dada5edd444b8416675"
     },
+    "RefManageR": {
+      "Package": "RefManageR",
+      "Version": "1.4.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "bibtex",
+        "httr",
+        "jsonlite",
+        "lubridate",
+        "methods",
+        "plyr",
+        "stringr",
+        "tools",
+        "utils",
+        "xml2"
+      ],
+      "Hash": "d22e94d9088f55cc112e722888afcc70"
+    },
+    "XML": {
+      "Package": "XML",
+      "Version": "3.99-0.18",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "methods",
+        "utils"
+      ],
+      "Hash": "4a5eca1070ecfe97e68727ed4b9a89fa"
+    },
     "askpass": {
       "Package": "askpass",
       "Version": "1.2.0",
@@ -165,6 +207,18 @@
         "R"
       ],
       "Hash": "543776ae6848fde2f48ff3816d0628bc"
+    },
+    "bibtex": {
+      "Package": "bibtex",
+      "Version": "0.5.1",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "backports",
+        "utils"
+      ],
+      "Hash": "a704d52e87822191b42c715c568f96dd"
     },
     "bit": {
       "Package": "bit",
@@ -318,7 +372,7 @@
       "Package": "checklist",
       "Version": "0.4.0",
       "Source": "Repository",
-      "Repository": "inbo",
+      "Repository": "https://inbo.r-universe.dev",
       "Requirements": [
         "R",
         "R6",
@@ -344,6 +398,32 @@
         "yaml"
       ],
       "Hash": "b3d837705be2ce6454dceda916b691bd"
+    },
+    "citr": {
+      "Package": "citr",
+      "Version": "0.3.2",
+      "Source": "GitHub",
+      "RemoteType": "github",
+      "RemoteHost": "api.github.com",
+      "RemoteRepo": "citr",
+      "RemoteUsername": "crsh",
+      "RemoteRef": "HEAD",
+      "RemoteSha": "a6c3d343bbfe62dd19b225debea5d7d564a9e715",
+      "Requirements": [
+        "R",
+        "RefManageR",
+        "assertthat",
+        "bibtex",
+        "curl",
+        "httr",
+        "methods",
+        "miniUI",
+        "rstudioapi",
+        "shiny",
+        "shinyjs",
+        "yaml"
+      ],
+      "Hash": "3d67eed13e2eefdd908d85ac64034c55"
     },
     "cli": {
       "Package": "cli",
@@ -384,7 +464,7 @@
       "Package": "codemetar",
       "Version": "0.3.5",
       "Source": "Repository",
-      "Repository": "inbo",
+      "Repository": "https://inbo.r-universe.dev",
       "Requirements": [
         "R",
         "cli",
@@ -1265,14 +1345,14 @@
       "Package": "lubridate",
       "Version": "1.9.3.9000",
       "Source": "Repository",
-      "Repository": "inbo",
+      "Repository": "https://inbo.r-universe.dev",
       "Requirements": [
         "R",
         "generics",
         "methods",
         "timechange"
       ],
-      "Hash": "eaf995f56a3d6ffcac77e853603371ff"
+      "Hash": "77778d7c6a58ec25c9e9be32965a819d"
     },
     "magrittr": {
       "Package": "magrittr",
@@ -1333,6 +1413,24 @@
         "utils"
       ],
       "Hash": "fec5f52652d60615fdb3957b3d74324a"
+    },
+    "mlpwr": {
+      "Package": "mlpwr",
+      "Version": "1.1.1",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "DiceKriging",
+        "R",
+        "digest",
+        "ggplot2",
+        "randtoolbox",
+        "rgenoud",
+        "rlist",
+        "stats",
+        "utils"
+      ],
+      "Hash": "734f1c1b0e32b7c7c9cb24d831125d33"
     },
     "modelr": {
       "Package": "modelr",
@@ -1504,6 +1602,17 @@
       ],
       "Hash": "2ec30ffbeec83da57655b850cf2d3e0e"
     },
+    "plyr": {
+      "Package": "plyr",
+      "Version": "1.8.9",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "Rcpp"
+      ],
+      "Hash": "6b8177fd19982f0020743fadbfdbd933"
+    },
     "praise": {
       "Package": "praise",
       "Version": "1.0.0",
@@ -1640,6 +1749,16 @@
         "textshaping"
       ],
       "Hash": "e3087db406e079a8a2fd87f413918ed3"
+    },
+    "randtoolbox": {
+      "Package": "randtoolbox",
+      "Version": "2.0.5",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "rngWELL"
+      ],
+      "Hash": "9d7665247a240d8ed712244ff8261dd8"
     },
     "rappdirs": {
       "Package": "rappdirs",
@@ -1784,6 +1903,17 @@
       ],
       "Hash": "ae34cd56890607370665bee5bd17812f"
     },
+    "rgenoud": {
+      "Package": "rgenoud",
+      "Version": "5.9-0.11",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "utils"
+      ],
+      "Hash": "40949dd2b9ad7ceb2bc6a8bd100a9330"
+    },
     "rlang": {
       "Package": "rlang",
       "Version": "1.1.4",
@@ -1794,6 +1924,20 @@
         "utils"
       ],
       "Hash": "3eec01f8b1dee337674b2e34ab1f9bc1"
+    },
+    "rlist": {
+      "Package": "rlist",
+      "Version": "0.4.6.2",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "XML",
+        "data.table",
+        "jsonlite",
+        "yaml"
+      ],
+      "Hash": "290c8ea0700d2e7258082d0025386e68"
     },
     "rmarkdown": {
       "Package": "rmarkdown",
@@ -1817,6 +1961,16 @@
         "yaml"
       ],
       "Hash": "062470668513dcda416927085ee9bdc7"
+    },
+    "rngWELL": {
+      "Package": "rngWELL",
+      "Version": "0.10-10",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R"
+      ],
+      "Hash": "c957d67ab5cd4bf99658f9019eb7895b"
     },
     "roxygen2": {
       "Package": "roxygen2",
@@ -1984,6 +2138,19 @@
         "xtable"
       ],
       "Hash": "6a293995a66e12c48d13aa1f957d09c7"
+    },
+    "shinyjs": {
+      "Package": "shinyjs",
+      "Version": "2.1.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "digest",
+        "jsonlite",
+        "shiny"
+      ],
+      "Hash": "802e4786b353a4bb27116957558548d5"
     },
     "sourcetools": {
       "Package": "sourcetools",

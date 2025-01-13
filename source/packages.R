@@ -5,3 +5,9 @@ library(INBOmd)
 #
 # tidyverse
 library(tidyverse)
+#
+# power analyses
+library(mlpwr)
+#
+# citations
+library(citr)
