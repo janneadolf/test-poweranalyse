@@ -5,7 +5,7 @@ checklist::write_checklist(x) #needed? check changes in checklist.yml
 #
 # change language for specific files (interactive)
 if (FALSE) {
-  x$checklist::set_exceptions()
+  #x$checklist::set_exceptions()
   checklist::write_checklist(x)
 }
 #
