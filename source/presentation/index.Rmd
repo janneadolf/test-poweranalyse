@@ -11,7 +11,7 @@ author:
     affiliation: Research Institute for Nature and Forest (INBO)
     corresponding: true
 style: INBO
-lang: nl
+lang: en
 funder: Research Institute for Nature and Forest (INBO)
 rightsholder: Research Institute for Nature and Forest (INBO)
 community: inbo

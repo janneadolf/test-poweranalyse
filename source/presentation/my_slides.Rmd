@@ -11,7 +11,7 @@ author:
     affiliation: Research Institute for Nature and Forest (INBO)
     corresponding: true
 style: INBO
-lang: nl
+lang: en
 funder: Research Institute for Nature and Forest (INBO)
 rightsholder: Research Institute for Nature and Forest (INBO)
 community: inbo
@@ -29,29 +29,11 @@ output:
   bookdown::dontrun: default
 ---
 
-```{r setup, include = FALSE}
-library(knitr)
-opts_chunk$set(
-  dev = "cairo_pdf"
-)
-library(tidyverse)
-library(INBOtheme)
-if (interactive()) {
-  theme_set(theme_inbo(base_size = 12, transparent = "plot"))
-} else {
-  theme_set(theme_inbo(base_size = 6, transparent = "plot"))
-  update_geom_defaults("text", list(size = 3))
-}
-```
+# generic options. See ?INBOmd::slides() for full list and more details.
 
-# Slides met RMarkdown en Bookdown extensie
+Placeholder
 
-- uitgebreider voorbeeld beschikbaar
-- broncode
-    - https://github.com/inbo/inbomd_examples/
-    - in map `source/inbo_slides`
-- afgewerkte pdf
-    - https://inbo.github.io/inbomd-examples/
+
 
 <!--chapter:end:index.Rmd-->
 
