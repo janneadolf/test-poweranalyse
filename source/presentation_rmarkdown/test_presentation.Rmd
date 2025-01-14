@@ -5,6 +5,8 @@ output:
 date: "2025-01-13"
 bibliography: "../bibliography.bib"
 css: "style.css"
+knit: (function(inputFile, encoding) {
+  rmarkdown::render(inputFile, encoding = encoding, output_dir = "../../output/presentation_rmarkdown") })
 ---
 
 ```{r setup, include=FALSE}
