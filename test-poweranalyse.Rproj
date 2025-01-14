@@ -13,4 +13,4 @@ RnwWeave: knitr
 LaTeX: XeLaTeX
 
 BuildType: Website
-WebsitePath: source/presentation
+WebsitePath: source/presentation_inbomd
