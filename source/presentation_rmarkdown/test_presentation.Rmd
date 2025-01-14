@@ -3,7 +3,7 @@ title: "Test presentation"
 output: 
   beamer_presentation
 date: "2025-01-13"
-bibliography: "bibliography.bib"
+bibliography: "../bibliography.bib"
 css: "style.css"
 ---
 
