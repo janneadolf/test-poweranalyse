@@ -1,0 +1,144 @@
+# Power analysis examples\vspace{3pt}
+
+## Surrogate modeling for simulation-based power analysis {.allowframebreaks}
+
+[@zimmer_sample_2023; @zimmer_simulation-based_2023]
+\vspace{\baselineskip}
+
+Aim
+
+- Support simulation-based power-analysis given
+  - Multiple design parameters (e.g., ...)
+  - Budget constraints
+
+Scope
+
+- Find cost-optimal solution among the ones with desired power (e.g., $\ge 0.95$)
+- Find power-optimal solution among the ones with desired costs (e.g., $\le X$ EUR)
+
+
+Approach 
+
+- Monte Carlo simulations, in combination with
+- Model-guided search of the design-parameter space (surrogate modeling)
+- R-package [*mlpwr*](https://cran.r-project.org/web/packages/mlpwr/index.html) 
+
+
+\newpage
+
+
+(ref:cap-mlpwr1) Power for multiple design parameters [from @zimmer_sample_2023]
+
+```{r mlpwr1, fig.cap = "(ref:cap-mlpwr1)", echo = FALSE, out.width="0.3\\textwidth", fig.align = 'center'}
+knitr::include_graphics("media/zimmer24_fig1.pdf")
+```
+
+
+\newpage
+
+:::::::::::::: {.columns .onlytextwidth}
+::: {.column width="60%"}
+
+Initialisation phase
+
+  - Simulate power for initial sets of design parameter combinations
+  
+Prediction phase
+
+  - Estimate model to approximate relationship between power and design parameters
+  - Based on model-implied relationship / model predictions, find (conditionally) optimal design parameter combination
+  
+Updating phase
+
+  - Simulate power for conditionally optimal design parameter combination
+  
+Termination
+
+  - Different criteria (e.g., desired model accuracy)
+
+:::
+::: {.column width="40%"}
+
+(ref:cap-mlpwr2) Surrogate modeling algorithm [from @zimmer_sample_2023]
+
+```{r mlpwr2, fig.cap = "(ref:cap-mlpwr2)", echo = FALSE, out.width="0.9\\textwidth", fig.align = 'right'}
+knitr::include_graphics("media/zimmer24_fig9.pdf")
+```
+:::
+::::::::::::::
+
+\newpage
+
+Surrogate model for single design parameter
+
+  - Logistic regression 
+  
+Surrogate model for multiple design parameters
+
+  - Gaussian process regression
+  - Support vector regression
+
+
+
+\newpage
+
+Demo t-test
+
+```{r mlpwr3, echo = TRUE}
+simfun <- function (N) {
+  # Generate a data set
+  dat <- rnorm(n = N, mean = 0.3 , sd = 1)
+  # Test the hypothesis
+  res <- t.test(dat)
+  res$p.value < 0.01
+}
+```
+
+
+\newpage
+
+Demo t-test
+
+```{r mlpwr4, echo = TRUE}
+res <- mlpwr::find.design(
+  simfun = simfun, 
+  boundaries = c(100, 300), 
+  power = 0.95
+  )
+# additional arguments, e.g.
+# costfun
+# cost
+# surrogate
+# n.startsets
+
+```
+
+\newpage
+
+Demo t-test
+
+```{r mlpwr5, echo = TRUE}
+summary(res)
+
+```
+
+\newpage
+
+Demo t-test
+
+```{r mlpwr6,echo = TRUE, out.width="0.7\\textwidth", fig.align = 'center'}
+plot(res)
+
+```
+
+
+\newpage
+
+Demo mixed model
+
+(ref:cap-mlpwr7) Result for multiple design dimensions [from @zimmer_sample_2023]
+
+```{r mlpwr7, fig.cap = "(ref:cap-mlpwr7)", echo = FALSE, out.width="0.4\\textwidth", fig.align = 'center'}
+knitr::include_graphics("media/zimmer24_fig5.pdf")
+```
+

@@ -1,0 +1,10 @@
+# Discussion
+
+- Surrogate modeling approach 
+    - Useful?
+- Power equivalence theory
+    - Interesting from a didactic perspective?
+- Additional challenges in hands-on power analyses
+    - Data generation: how complex / realistic?
+    - Data generation: how to incorporate uncertainty about ('nuisance') population-level effects?
+    - Documentation / reproducibility
