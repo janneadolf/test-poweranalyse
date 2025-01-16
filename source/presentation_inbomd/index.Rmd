@@ -1,7 +1,7 @@
 --- 
 # generic options. See ?INBOmd::slides() for full list and more details.
-title: Poweranalyse
-subtitle:
+title: Power analysis in quantitative psychology\vspace{12pt}
+subtitle: Tools and theories
 author: 
   - name:
       given: Janne
@@ -15,16 +15,19 @@ lang: en
 funder: Research Institute for Nature and Forest (INBO)
 rightsholder: Research Institute for Nature and Forest (INBO)
 community: inbo
-keywords: power
+keywords: statistical power
 # slide specific options. See ?INBOmd::slides() for full list and more details.
 toc: true
-toc_name: 
+toc_name: Overview
+slide_level: 3
 cover_photo:
 cover_horizontal:
-
 site: bookdown::bookdown_site
+bibliography: ../INBO.bib
 output:
   INBOmd::slides: default
+classoption:
+- twocolumn
 ---
 
 ```{r setup, include = FALSE}
@@ -40,13 +43,9 @@ if (interactive()) {
   theme_set(theme_inbo(base_size = 6, transparent = "plot"))
   update_geom_defaults("text", list(size = 3))
 }
+library(citr)
+options(citr.use_betterbiblatex = TRUE) 
 ```
 
-# Slides met RMarkdown en Bookdown extensie
 
-- uitgebreider voorbeeld beschikbaar
-- broncode
-    - https://github.com/inbo/inbomd_examples/
-    - in map `source/inbo_slides`
-- afgewerkte pdf
-    - https://inbo.github.io/inbomd-examples/
+
