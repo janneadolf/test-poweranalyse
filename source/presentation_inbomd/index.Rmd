@@ -23,7 +23,7 @@ slide_level: 3
 cover_photo:
 cover_horizontal:
 site: bookdown::bookdown_site
-bibliography: ../INBO.bib
+bibliography: INBO.bib
 output:
   INBOmd::slides: default
 classoption:
