@@ -3,7 +3,7 @@
 ### Define essential simulation functions
 
 Generate.G1 <- function(condition, fixed_objects) {
-    GenerateIf(TRUE)
+    SimDesign::GenerateIf(TRUE)
     # Define data generation code ...
 
     # Return a vector, matrix, data.frame, or list
