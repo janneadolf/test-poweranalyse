@@ -1,7 +1,7 @@
 # generate skeleton for simulation_1
 SimDesign::SimFunctions(
   filename = "simulation_1",
-  dir = "source/tryout_simdesign/simulation_1", # not working
+  dir = "source/tryout_simdesign/simulation", # not working
   save_structure = "all",
   extra_file = TRUE,
   nAnalyses = 2,
@@ -9,6 +9,7 @@ SimDesign::SimFunctions(
   summarise = TRUE,
   comments = TRUE,
   openFiles = FALSE, # otherwise files opened in separate R Studio sessions
-  spin_header = TRUE,
+  spin_header = FALSE, 
+  # spin documents: https://bookdown.org/yihui/rmarkdown-cookbook/spin.html
   SimSolve = FALSE
 )
