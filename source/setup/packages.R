@@ -9,5 +9,8 @@ library(tidyverse)
 # power analyses
 library(mlpwr)
 #
+# simulation design
+library(SimDesign)
+#
 # citations
 library(citr)
