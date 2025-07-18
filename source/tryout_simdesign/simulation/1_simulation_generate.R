@@ -2,21 +2,12 @@
 
 ### Define essential simulation functions
 
-Generate.G1 <- function(condition, fixed_objects) {
+Generate <- function(condition, fixed_objects) {
     SimDesign::GenerateIf(TRUE)
-    # Define data generation code ...
-
+    dat <- rnorm(n = condition$N, mean = 0.3 , sd = 1) |>
+      as.data.frame()
     # Return a vector, matrix, data.frame, or list
-    dat <- data.frame()
-    dat
-}
-
-Generate.G2 <- function(condition, fixed_objects) {
-    # Define data generation code ...
-
-    # Return a vector, matrix, data.frame, or list
-    dat <- data.frame()
-    dat
+    return(dat)
 }
 
 #-------------------------------------------------------------------

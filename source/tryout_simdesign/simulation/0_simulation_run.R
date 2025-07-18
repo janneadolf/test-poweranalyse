@@ -1,22 +1,37 @@
 ### Define design conditions
 Design <- SimDesign::createDesign(
-  factor1 = NA,
-  factor2 = NA
+  N = seq(100, 300, by = 50)
   )
 
 ### Source in essential functions
-source("source/tryout_simdesign/simulation_1/1_simulation_1-generate.R")
-source("source/tryout_simdesign/simulation_1/2_simulation_1-analyse.R")
-source("source/tryout_simdesign/simulation_1/3_simulation_1-summarise.R")
-source("source/tryout_simdesign/simulation_1/4_simulation_1-extras.R")
+source("source/tryout_simdesign/simulation/1_simulation_generate.R")
+source("source/tryout_simdesign/simulation/2_simulation_analyse.R")
+source("source/tryout_simdesign/simulation/3_simulation_summarise.R")
 
 
 ### Run the simulation
 res <- SimDesign::runSimulation(
   design = Design, 
-  replications = 2,
-  generate = list(G1 = Generate.G1, G2 = Generate.G2), 
-  analyse = list(A1 = Analyse.A1, A2 = Analyse.A2), 
-  summarise = Summarise)
-res
+  replications = 100,
+  generate = Generate, 
+  analyse = Analyse, 
+  summarise = Summarise
+  )
 
+# Run simulation without summarize
+res <- SimDesign::runSimulation(
+  design = Design, 
+  replications = 100,
+  generate = Generate, 
+  analyse = Analyse, 
+  summarise = NA,
+  save_results = TRUE,
+  control = list(save_seeds = TRUE),
+  save_details = list(
+    out_rootdir = "source/tryout_simdesign/simulation",
+    # folder "run1" should exist, "results" or "seeds" should not
+    save_results_dirname = "run1/results",
+    save_seeds_dirname = "run1/seeds"
+    )
+  
+)

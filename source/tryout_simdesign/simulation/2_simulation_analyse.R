@@ -2,21 +2,14 @@
 
 ### Define essential simulation functions
 
-Analyse.A1 <- function(condition, dat, fixed_objects) {
-    # Run statistical analyses of interest ... 
-
-    # Return a named vector or list
-    ret <- SimDesign::nc(stat1 = NaN, stat2 = NaN)
-    ret
+Analyse <- function(condition, dat, fixed_objects) {
+  testout <- t.test(dat)
+  pvalue <- testout$p.value
+  # Return a named vector or list
+  out <- SimDesign::nc(pvalue = pvalue)
+  return(out)
 }
 
-Analyse.A2 <- function(condition, dat, fixed_objects) {
-    # Run statistical analyses of interest ... 
-
-    # Return a named vector or list
-    ret <- SimDesign::nc(stat1 = NaN, stat2 = NaN)
-    ret
-}
 
 #-------------------------------------------------------------------
 
