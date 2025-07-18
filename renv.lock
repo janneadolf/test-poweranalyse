@@ -1,6 +1,6 @@
 {
   "R": {
-    "Version": "4.4.1",
+    "Version": "4.4.3",
     "Repositories": [
       {
         "Name": "inbo",
@@ -38,7 +38,7 @@
       "Package": "INBOmd",
       "Version": "0.6.3",
       "Source": "Repository",
-      "Repository": "https://inbo.r-universe.dev",
+      "Repository": "CRAN",
       "Requirements": [
         "R",
         "assertthat",
@@ -61,7 +61,7 @@
       "Package": "INBOtheme",
       "Version": "0.6.0",
       "Source": "Repository",
-      "Repository": "https://inbo.r-universe.dev",
+      "Repository": "inbo",
       "Requirements": [
         "R",
         "assertthat",
@@ -75,7 +75,7 @@
     },
     "MASS": {
       "Package": "MASS",
-      "Version": "7.3-61",
+      "Version": "7.3-64",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
@@ -86,7 +86,7 @@
         "stats",
         "utils"
       ],
-      "Hash": "0cafd6f0500e5deba33be22c46bf6055"
+      "Hash": "49d2d8090b74c1179df1aff16201caf8"
     },
     "Matrix": {
       "Package": "Matrix",
@@ -454,7 +454,7 @@
       "Package": "checklist",
       "Version": "0.4.0",
       "Source": "Repository",
-      "Repository": "https://inbo.r-universe.dev",
+      "Repository": "inbo",
       "Requirements": [
         "R",
         "R6",
@@ -546,7 +546,7 @@
       "Package": "codemetar",
       "Version": "0.3.5",
       "Source": "Repository",
-      "Repository": "https://inbo.r-universe.dev",
+      "Repository": "inbo",
       "Requirements": [
         "R",
         "cli",
@@ -1478,14 +1478,14 @@
       "Package": "lubridate",
       "Version": "1.9.3.9000",
       "Source": "Repository",
-      "Repository": "https://inbo.r-universe.dev",
+      "Repository": "inbo",
       "Requirements": [
         "R",
         "generics",
         "methods",
         "timechange"
       ],
-      "Hash": "77778d7c6a58ec25c9e9be32965a819d"
+      "Hash": "eaf995f56a3d6ffcac77e853603371ff"
     },
     "magrittr": {
       "Package": "magrittr",
