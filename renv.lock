@@ -1935,6 +1935,30 @@
       ],
       "Hash": "77d9ebf09102495f2f4b6f760c00cac4"
     },
+    "quarto": {
+      "Package": "quarto",
+      "Version": "1.5.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "cli",
+        "fs",
+        "htmltools",
+        "jsonlite",
+        "later",
+        "lifecycle",
+        "processx",
+        "rlang",
+        "rmarkdown",
+        "rstudioapi",
+        "tools",
+        "utils",
+        "xfun",
+        "yaml"
+      ],
+      "Hash": "2e3c725ab940c0fc720ca9f66c6bff44"
+    },
     "ragg": {
       "Package": "ragg",
       "Version": "1.3.2",

@@ -18,5 +18,6 @@ library(SimDesign)
 # citations
 library(citr)
 #
-# convert docx to rmd
+# convert docx to rmd to qmd
 library(protocolhelper) 
+library(quarto)
