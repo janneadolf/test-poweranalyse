@@ -26,5 +26,8 @@ fs::file_move(
   new_path = names_qmd
   )
 
-# render 
+# render via R console
 quarto::quarto_render("source/prereg_template/template.qmd", output_format = "pdf")
+
+# render via terminal
+# quarto render source/prereg_template/template.qmd --output-dir ../../output/prereg_template --to pdf
