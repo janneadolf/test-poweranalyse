@@ -3,6 +3,9 @@ library(checklist)
 library(INBOtheme)
 library(INBOmd)
 #
+# checklist suggests
+library(cyclocomp)
+#
 # tidyverse
 library(tidyverse)
 #
@@ -14,3 +17,6 @@ library(SimDesign)
 #
 # citations
 library(citr)
+#
+# convert docx to rmd
+library(protocolhelper) 
