@@ -6,6 +6,7 @@
 *.html
 *.log
 *.mdb
+*.pdf
 *.shp*
 *.shx
 *.xls*
